@@ -13,7 +13,6 @@ import javax.persistence.Table;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "book2")
 public class Book {
     @Id
     private Long id;
