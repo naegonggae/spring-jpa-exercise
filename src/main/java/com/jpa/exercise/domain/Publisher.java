@@ -11,8 +11,9 @@ import javax.persistence.Id;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Author {
+public class Publisher {
     @Id
     private Long id;
-    private String nname;
+    private String name;
+    private String address;
 }
