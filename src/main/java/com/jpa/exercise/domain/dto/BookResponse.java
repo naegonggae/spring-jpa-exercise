@@ -19,7 +19,7 @@ public class BookResponse {
         return BookResponse.builder()
                 .bookId(book.getId())
                 .bookName(book.getName())
-                .authorName(book.getAuthor().getNname())
+                .authorName(book.getAuthor().getName()) // author에서 정보를 꺼낼 수 있다고 봐야하나
                 .publisherName(book.getPublisher().getName())
                 .build();
     }

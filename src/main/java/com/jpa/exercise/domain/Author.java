@@ -14,5 +14,5 @@ import javax.persistence.Id;
 public class Author {
     @Id
     private Long id;
-    private String nname;
+    private String name;
 }

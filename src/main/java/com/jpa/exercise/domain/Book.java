@@ -16,11 +16,11 @@ public class Book {
     private String name;
     //private Long authorId;
 
-    @ManyToOne // 단방향
-    @JoinColumn(name = "author_id")
+    @ManyToOne // 단방향 매핑
+    @JoinColumn(name = "author_id") // join하면 FK 걸어
     private Author author;
 
-    @OneToOne
+    @OneToOne // 단방향 매핑
     @JoinColumn(name = "publisher_id")
     private Publisher publisher;
 }

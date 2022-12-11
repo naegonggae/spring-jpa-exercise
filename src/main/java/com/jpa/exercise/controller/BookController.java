@@ -28,7 +28,7 @@ public class BookController {
         return ResponseEntity.ok().body(bookService.findBooks(pageable));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}") // 나중에 구현해보기
     public ResponseEntity<Book> get(@PathVariable Long id) {
         return ResponseEntity.ok().body(new Book());
     }

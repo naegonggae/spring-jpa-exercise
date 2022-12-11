@@ -24,6 +24,7 @@ public class BookService {
 
     public List<BookResponse> findBooks(Pageable pageable) {
         Page<Book> books = bookRepository.findAll(pageable);
+        // BookResponse에 book만 넘길 수 있게 함 왜냐면 book에 author이 있어서
         List<BookResponse> bookResponses = books.stream()
                 .map(book -> BookResponse.of(book)).collect(Collectors.toList());
         return bookResponses;
